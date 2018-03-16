@@ -2,7 +2,7 @@
 
 Run elevator application on tomcat :
 ``
-mvn clean verify org.codehaus.cargo:cargo-maven2-plugin:run
+mvn clean install -Dmaven.tomcat.port=8292 tomcat:run-war
 ``
 
 #### Application is secured with credentials for all requests need to pass credentials in the request headers
